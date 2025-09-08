@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import styles from "./Login.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // Adicione lógica de autenticação aqui
         alert(`Email: ${email}\nSenha: ${senha}`);
+        navigate('/dashboard'); // Redireciona para a página do dashboard após o login
+
     };
 
     return (
