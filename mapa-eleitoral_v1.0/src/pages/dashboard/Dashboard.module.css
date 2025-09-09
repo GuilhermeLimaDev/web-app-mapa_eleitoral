@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20dvh;
+    background-color: var(--cinza-header)
+}
+
+.content{
+    display: grid;
+    width: 100dvw;
+    grid-template-columns: 80% 20%;
+    margin: 10px 0px;
+}
+
+.columnOne, .columnTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.columnOne{
+    display: grid;
+    grid-template-rows: 20dvh 50dvh 40dvh;
+}
+
+.rows{
+    display: flex;
+}
+
+.columnTwo{
+    display: grid;
+    grid-template-rows: 50dvh 20dvh;
+}
