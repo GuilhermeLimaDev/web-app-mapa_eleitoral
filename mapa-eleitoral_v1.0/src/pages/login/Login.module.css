@@ -37,12 +37,12 @@
 }
 
 .input:focus {
-    border-color: #4078c0;
+    border-color: var(--azul-primario);
 }
 
 .button {
     padding: 0.75rem 1rem;
-    background: #4078c0;
+    background: var(--azul-primario);
     color: #fff;
     border: none;
     border-radius: 6px;
